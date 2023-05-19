@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head .class="sanpham">
+    <title>LK-AUTO</title>
+    <link rel="icon" type="image/x-icon" href="./img/LK.png">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./doan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/src/pages/Layout.css" />
+<link rel="stylesheet" type="text/css"
+href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body align="center"id="Myweb" data-spy="scroll" data-target=".navbar" data-offset="60">
+ 
+  <div class="modal fade" id="dn" role="dialog" style="text-align: center;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Đăng Nhập</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw">Nhập email của bạn</label>
+              <input type="email" class="form-control" id="psw" placeholder="email">
+            </div>
+            <div class="form-group">
+              <label for="usrname"> Nhập Mât Khẩu</label>
+              <input type="password" class="form-control" id="usrname" placeholder="password">
+            </div>
+            <div class="modal-footer"type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+              <button type="submit" class="btn btn-block dangnhap" >Đăng Nhập
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </div>
+          </form>
+        </div>
+        
+         
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#Myweb" style="padding-left: 70px;"> <img src="./img/logo_lk.png" alt=""width="125px"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" style="font-size: 20px;">
+              <li><a href="#a1">SẢN PHẨM BÁN CHẠY</a></li>
+              <li><a href="#a2">CÁC LOẠI XE</a></li>
+              <li><a href="#chu">THÔNG TIN</a></li>
+              <li><a href="#a5">ĐỊA CHỈ</a></li>
+              
+              
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-menu-hamburger"></span>
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./tin_tuc.html" id="to">Tin Tức chung</a></li>
+                  <li><a href="./phukien.html" id="to">Phụ Kiện&emsp;<span class="glyphicon glyphicon-wrench"></span></a></li>
+                  
+                  <li id="dangnhapdangxuat"><a class="btn" data-toggle="modal" data-target="#dn" id="to">Đăng Nhập  </a></li>
+                  <li id="thongtinnguoidangnhap" id="to">Người Dùng <b></b> <span class="glyphicon glyphicon-user"></span></li>
+
+                </ul>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br>
+      <br><br>
+      <br><br>
+      
+
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="./img/banderli2.png" alt="Hon Da" width="1200" height="800">
+            <div class="carousel-caption">
+              <h3>HONDA CIVIC</h3>
+              <p>CIVIC TYPE R bứt tốc vượt đỉnh</p>
+            </div>      
+          </div>
+    
+          <div class="item">
+            <img src="./img/banderli.jpg" alt="Hon Da" width="1200" height="800">
+            <div class="carousel-caption">
+              <h3>HONDA SENSING MỚI </h3>
+              <p>Giác quan khai phá khí chất dẫn đầu</p>
+            </div>      
+          </div>
+        
+          <div class="item">
+            <img src="./img/banderli3.jpg" alt="Hon Da" width="1200" height="800">
+            <div class="carousel-caption">
+              <h3>HONDA CIVIC</h3>
+              <p>Kiến tạo chuẩn mực hoàn hảo </p>
+            </div>      
+          </div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    
+        
+        
+     </div>
+     <!-- /////////////////////////////////// -->
+     <div id="a1" class="container text-center">
+     
+      <br><br>
+      <hr>
+      <br><br>
+         <div  style="color: rgb(229, 210, 210);">
+          
+        <h1><b> Sản Phẩm Bán Chạy</b>&emsp;<span class="glyphicon glyphicon-hand-down"></span></h1>
+        <p>I love cars</p>
+        <p>3 sản bán chạy đang được giảm giá  <span class="glyphicon glyphicon-tags"></span></p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#demo" data-toggle="collapse" >
+              <p><strong>Lamboghini V4</strong></p><br>
+              <img src="./img/lambo1.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+            </a>
+            <div id="demo" class="collapse"  >
+                <p style="color: rgb(66, 244, 238);">Lamboghini V4</p>
+                <p class="phong">Giá: 999.000.000 $</p>
+                <p class="phong"><del>1.000.000.000 $</del>  <span class="glyphicon glyphicon-tags"></span></p>
+                <p><a href="./chi_tiet_sp1_lambo.html">Xem Chi Tiết</a></p>  
+              </div>
+            </div>
+            <div class="col-sm-4">
+                <a href="#demo2" data-toggle="collapse">
+                    <p><strong>Lamboghini Aventadod</strong></p><br>
+                    <img src="./img/lambo2.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+                  </a>
+                  <div id="demo2" class="collapse"  >
+                    <p style="color: rgb(66, 244, 238);">Lamboghini Aventadod</p>
+                    <p class="phong">Giá:1.000.000.000 $</p>
+                    <p class="phong"><del>5.000.000.000 $</del>  <span class="glyphicon glyphicon-tags"></span></p>
+                    <p><a href="./chi_tiet_sp2_lambo.html">Xem Chi Tiết</a></p>   
+                  </div>
+            </div>
+            <div class="col-sm-4">
+                <a href="#demo3" data-toggle="collapse">
+                    <p><strong>Lamboghini Huracan</strong></p><br>
+                    <img src="./img/lambo3.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+                  </a>
+                  <div id="demo3" class="collapse" >
+                    <p style="color: rgb(66, 244, 238);">Lamboghini Huracan </p>
+                    <p class="phong">Giá: 15.000.000.000 $</p>
+                    <p class="phong"><del>18.000.000.000 $</del>  <span class="glyphicon glyphicon-tags"></span></p>
+                    <p><a href="./chi_tiet_sp3_lambo.html">Xem Chi Tiết</a></p>  
+                  </div>
+            </div>
+          </div>
+      </div>
+      <br>
+      <div id="a2" class="bg-1">
+        <br><br><br>
+        <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+          <a href="./chitiet_sp1_honda.html"><img src="./img/honda_1.jpg" alt="" width="100%">   </a>  
+            <p><strong style="color: crimson;">HONDA TYPE R</strong></p>
+            <p class="phong" style="color: rgb(0, 0, 0);">Giá: 1.500.000.000 VND</p>
+            <p class="phong" style="color: rgb(0, 0, 0);"><del>1.800.000.000 VND</del>  <span class="glyphicon glyphicon-tags"></span></p>
+            <button><a href="./dk_lai_thu.html"> <span class="glyphicon glyphicon-hand-right"></span> Lái Thử</a></button>
+            <button><a href="./thanhtoan.html"> <span class="glyphicon glyphicon-hand-right"></span> Mua Ngay</a></button> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="./chitiet_sp2_honda.html"><img src="./img/honda_2.jpg" alt="" width="100%">   </a>  
+              <p><strong style="color: crimson;">HONDA CITY</strong></p>
+              <p class="phong" style="color: rgb(0, 0, 0);">Giá: 790.000.000 VND</p>
+              <p class="phong" style="color: rgb(0, 0, 0);"><del>800.000.000 VND</del>  <span class="glyphicon glyphicon-tags"></span></p>
+              <button><a href="./dk_lai_thu.html"> <span class="glyphicon glyphicon-hand-right"></span> Lái Thử</a></button>
+              <button><a href="./thanhtoan.html"> <span class="glyphicon glyphicon-hand-right"></span> Mua Ngay</a></button> 
+            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="./chitiet_sp3_honda.html"><img src="./img/honda_3.jpg" alt="" width="100%">   </a>   
+              <p><strong style="color: crimson;">HONDA CIVIC</strong></p>
+              <p class="phong" style="color: rgb(0, 0, 0);">Giá: 900.000.000 VND</p>
+              <p class="phong" style="color: rgb(0, 0, 0);"><del>1.000.000.000 VND</del>  <span class="glyphicon glyphicon-tags"></span></p>
+              <button><a href="./dk_lai_thu.html"> <span class="glyphicon glyphicon-hand-right"></span> Lái Thử</a></button>
+              <button><a href="./thanhtoan.html"> <span class="glyphicon glyphicon-hand-right"></span> Mua Ngay</a></button> 
+            </div>
+        </div>
+        <!-- ////////// -->
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="./chitiet_sp4_honda.html"><img src="./img/honda_4.jpg" alt="" width="100%">   </a>    
+              <p><strong style="color: crimson;">HONDA HR-V</strong></p>
+              <p class="phong" style="color: rgb(0, 0, 0);">Giá: 1.500.000.000 VND</p>
+              <p class="phong" style="color: rgb(0, 0, 0);"><del>1.800.000.000 VND</del>  <span class="glyphicon glyphicon-tags"></span></p>
+              <button><a href="./dk_lai_thu.html"> <span class="glyphicon glyphicon-hand-right"></span> Lái Thử</a></button>
+              <button><a href="./thanhtoan.html"> <span class="glyphicon glyphicon-hand-right"></span> Mua Ngay</a></button>
+            </div>
+        </div>
+        <!--  -->
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="./chitiet_sp5_honda.html"><img src="./img/honda_5.jpg" alt="" width="100%">   </a>  
+              <p><strong style="color: crimson;">HONDA CR-V</strong></p>
+              <p class="phong" style="color: rgb(0, 0, 0);">Giá: 1.000.000.000 VND</p>
+              <p class="phong" style="color: rgb(0, 0, 0);"><del>1.500.000.000 VND</del>  <span class="glyphicon glyphicon-tags"></span></p>
+              <button><a href="./dk_lai_thu.html"> <span class="glyphicon glyphicon-hand-right"></span> Lái Thử</a></button>
+              <button><a href="./thanhtoan.html"> <span class="glyphicon glyphicon-hand-right"></span> Mua Ngay</a></button>
+            </div>
+        </div>
+        <!--  -->
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="./chitiet_sp6_honda.html"><img src="./img/honda_6.jpg" alt="" >   </a>   
+              <p><strong style="color: crimson;">HONDA  ACCORD</strong></p>
+              <p class="phong" style="color: rgb(0, 0, 0);">Giá: 700.000.000 VND</p>
+              <p class="phong" style="color: rgb(0, 0, 0);"><del>900.000.000 VND</del>  <span class="glyphicon glyphicon-tags"></span></p>
+              <button><a href="./dk_lai_thu.html"> <span class="glyphicon glyphicon-hand-right"></span> Lái Thử</a></button>
+              <button><a href="./thanhtoan.html"> <span class="glyphicon glyphicon-hand-right"></span> Mua Ngay</a></button>
+            </div>
+        </div>
+        <!-- ////////// -->
+      </div>
+        
+      </div>
+    </div>
+    <br >
+    <hr id="chu">
+    <br >
+    <style>
+      #chu{
+        text-align: left;
+      }
+      img{text-align: right;}
+     
+    </style>
+ 
+   <div >
+  
+    <table style="text-align: left; color: aliceblue;" >
+      <tr>
+        <td>
+          <img src="./img/luan_van1.jpg" alt="" width="400px" height="450px">
+        </td>
+        <td>
+          <ul>
+            <h3 style="color: crimson;">Lịch Sử HonDa</h3>
+            <li style="color: crimson;">
+          Honda lấn sân sang lĩnh vực sản xuất ô tô <br>
+        </li>
+Năm 1960, Honda lấn sân sang sản xuất ô tô nhưng phải đến năm 1973, hãng mới cho ra mắt sản phẩm đầu tiên mang tên Civic sử dụng động cơ CVCC. <br>
+
+Honda Civic thế hệ đầu tiên <br>
+Honda Civic thế hệ đầu tiên <br>
+Civic nhanh chóng trở thành “ngôi sao” khi là một trong những mẫu ô tô hiếm hỏi đạt yêu cầu về khí thải và tiết kiệm nhiên liệu trong bối cảnh khủng hoảng kinh tế. Thậm chí Civic còn giúp Honda có thể cạnh tranh sòng phẳng cùng những thương hiệu đình đám tại Châu Âu. <br>
+
+Đến tận bây giờ, Civic vẫn còn tồn tại và đang là mẫu xe rất ăn khách. Trải qua 10 thế hệ, Civic hiện đang là một những dòng xe có nhiều thế hệ nhất trong ngành công nghiệp sản xuất ô tô.
+
+Honda Accord thế hệ đầu tiên
+Honda Accord thế hệ đầu tiên
+Accord là sản phẩm thứ 2 ra mắt vào năm 1976 và cũng mang lại thành công  vang dội cho Honda. Mẫu sedan hạng D này vừa ra mắt đã bán chạy nhất phân khúc, chỉ tính ri6ng tại Mỹ, đã có 8 triệu đơn đặt hàng cho Accord.<br>
+
+Mẫu xe thứ 3 gắn liền với lịch sử Honda chính là CR-V. Việc CR-V ra mắt đã đánh dấu một cuộc cách mạng khi Honda chính thức khai phá ra phân khúc crossover.<br>
+
+Honda CR-V thế hệ đầu tiên<br>
+Honda CR-V thế hệ đầu tiên<br>
+Ngay từ cách đặt tên, Honda đã cho thấy sự đột phá của sản phẩm. CR-V là từ viết tắt của Comfortable Recreational Vehicle. Đến bây giờ, CR-V vẫn đang được sản xuất và hiện là mẫu crossover bán chạy nhất thị trường Việt Nam.<br>
+
+Honda thành lập thương hiệu xe sang Acura<br>
+Để có thể cạnh tranh cùng những thương hiệu xe sang đình đám như Audi, BMW hay Mercedes-Benz. Năm 1984, Honda đã thành lập một thương hiệu hạng sang Acura và thị trường đầu tiên mà Honda nhắm đến chính là Mỹ.<br>
+
+Có thể khách hàng chưa biết, Acura là thương hiệu xe sang đầu tiên có mặt tại Mỹ. Sau đó mới có sự xuất hiện của Lexus (Toyota) và Infiniti (Nissan). Dù thương hiệu còn non trẻ nhưng Acura lại nhanh chóng nếm trái ngọt khi trở thành dòng xe hạng sang bán chạy nhất trong năm đầu phân phối.<br>
+
+Tính đến tháng 6/1987, thương hiệu Acura giao đến tay khách hàng Mỹ hơn 100.000 xe. Vì thế Honda luôn tự hào khi nhắc đến Acura thời điểm bấy giờ.<br>
+
+Chia sẻ về sự thành công của Acura, Honda cho biết hãng luôn cố gắng để khách hàng có thể trải nghiệm tốt nhất với mức tiện nghi cao cấp như xe sang nhưng lại có sự bền bỉ của một chiếc xe Nhật.<br>
+</ul>
+        </td>
+      </tr>
+    </table>
+   </div>
+    <br><br>
+    <br><br>
+    <div  style="color: red;">
+      <h1> ĐƯỜNG DÂY NÓNG</h1>
+    
+    </div>
+    <!-- <> -->
+<div class="container" style="width: 100%; color: red;">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <h3>Hotline:0705342132</h3>    
+       </div>
+       <div class="item">
+      <h3> FaceBook: <a href="#">http:/caophilong</a></h3>
+       </div>
+      <div class="item">
+        <h3>Zalo: <a href="#">Nguyenvikhang</a></h3>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    </a>
+  </div>
+</div>
+<!-- </> -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+      <!--  -->
+      <div  class="container-fluid" id="a5" >
+  
+        <div id="root"></div>
+        <div class="row"></div>
+        <footer class="text-center text-lg-start bg-white text-muted footer1" style="background:  #333;">
+            <div class="container text-center text-md-start mt-3 mb-1 pt-2">
+              <div class="row mt-3">
+                <div class="col-md-3" style="text-align: left; color: white;">
+      
+                  <h6 class="text-uppercase fw-bold mb-4"><strong>Contact</strong></h6>
+                  <p><i class="fas fa-home me-3 text-grayish"></i> 102 Nguyen Dinh Chinh</p>
+                  <p>
+                    <i class="fas fa-envelope me-3 text-grayish"></i>
+                    nguyenduykhang2004.cd@gmail.com
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope me-3 text-grayish"></i>
+                    long@gmail.com
+                  </p>
+                  <p><i class="fas fa-phone me-3 text-grayish"></i> + 01 234 567 89</p>
+                </div>
+               
+                <div class="col-md-2" style="text-align: left;">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+      
+                    <strong>Meet Us On</strong>
+                  </h6>
+                  <p>
+                    <i class="fa fa-facebook-official" style="font-size:20px; color:blue"></i> <a
+                      href="https://www.facebook.com/" class="haha"> Facebook</a>
+                  </p>
+                  <p>
+                    <i class="fa fa-instagram" style="font-size:20px;color:magenta"></i> <a
+                      href="https://www.instagram.com/" class="haha"> Instagram</a>
+                  </p>
+                  <p>
+                    <i class="fa fa-youtube-square" style="font-size:20px;color:red"></i>
+                    <a href="https://www.youtube.com/" class="haha">Youtube</a>
+                  </p>
+                  <p>
+                    <i class="fa fa-amazon" style="font-size:20px;color:orangered"></i>
+                    <a href="https://www.amazon.com/" class="haha">
+                      Amazon</a>
+                  </p>
+                </div>
+                <div class="col-md-4" style="text-align: left;">
+                  <h6 class="text-uppercase fw-bold">
+                    
+                    <strong>Find us at</strong></h6>
+                  <iframe class="rounded"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2017572415216!2d106.6761517146227!3d10.79585399230832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d6786d52bf%3A0x77a4a2db8949796e!2zMTAyIE5ndXnhu4VuIMSQw6xuaCBDaMOtbmgsIFBoxrDhu51uZyAxNSwgUGjDuiBOaHXhuq1uLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1660565287306!5m2!1svi!2s"
+              width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          
+        </div>
+      </div>
+      
+   
+    </div>
+    <br><br><br>
+    <script>
+      $(document).ready(function(){
+
+//load menu
+FLoadMenu();
+setClickDangxuat();
+
+
+        $(".navbar a, footer a [href='#myPage']").on('click', function(event) {
+          if (this.hash !== ""){
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 1000, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+
+       //thiet lap sunkien cho dang xuat (neu co) 
+        $('a.dangxuat').click(function(){
+          fDangxuat();
+          });
+
+
+        $('#dn button.dangnhap').click(function(){
+          FDangNhap();
+        });
+
+        $('#dn button.dangnhap').click(function(){
+          FDangXuat();
+        });
+      })
+
+      function FDangNhap()
+      {
+        // alert('hi');
+        email = $('#dn input[type=email]').val();
+        pw = $('#dn input[type=password]').val();
+        
+        if (email==='long@gmail.com' && pw==='123456') //ok
+        {
+          localStorage.setItem('email', email);
+          //load lai trang
+          location.reload();
+        }
+          //thay the menu
+          //let s=`<a class="btn dangxuat" data-toggle="modal" data-target="#dn">Đăng Nhập`;
+
+          // $('#dangnhapdangxuat').html(s );
+
+          // $('a.dangxuat').click(function(){
+          //   localStorage.removeItem('email');
+          //   location.reload();
+          // });
+
+          // $('#thongtinnguoidangnhap').html(email);
+
+        }
+      
+
+      function fDangxuat()
+      {
+        localStorage.removeItem('email');
+            location.reload();
+      }
+
+      function FLoadMenu()
+      {
+        let email = localStorage.getItem('email');
+        if (email != null)
+        {
+          //thay the menu
+          $('#dangnhapdangxuat').html('<a class="dangxuat">Đăng Xuất</a>');
+          $('#thongtinnguoidangnhap').html(email);
+
+          
+        }
+      }
+
+      function setClickDangxuat()
+      {
+         $('a.dangxuat').click(function(){
+            localStorage.removeItem('email');
+            location.reload();
+          });
+        }
+      </script>
+      <!-- hiện thị số người truy cập -->
+      
+      
+       
+
+      
+      
+
+</body>
+</html>

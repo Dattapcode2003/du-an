@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $('.DKLT').click(function () {
+    let id = $(this).data('id');
+    tam = '';
+    $("#myModal1").modal('show');
+    for (let i = 0; i < sanpham.length; i++) {
+      let item = sanpham[i];
+      if (item.id == id) {
+        tam += item.ten;
+      }
+    }
+    $("#myModal1 #id").val(tam);
+  });
+    </script>
+    
+</head>
+<body>
+    <script>
+        const sanpham = [
+    {
+        id: 1, hangxe: 'Mercedes',
+        loai: 'sedan',
+        spnoibat: 1,
+        imgchinh: './mec/sedan-maybach-s500.png',
+        gia: '7,281 Tỷ VND',
+        ten: 'Mercedes Maybach S500',
+    },
+
+    ];
+    </script>
+    <form role="form">
+        <div class="form-group">
+          <label for="psw"></span> Dòng xe</label>
+          <input class="form-control" id="id" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="psw"></span> Họ và tên</label>
+          <input class="form-control" id="name" placeholder="Nhập họ tên của bạn" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="usrname">Địa chỉ email</label>
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+        <div class="form-group">
+          <label for="psw"></span> Số điện thoại</label>
+          <input class="form-control" id="sdt" placeholder="Nhập số điện thoại của bạn" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="start">Ngày lái thử:</label>
+          <input class="form-control" type="date" id="start" name="trip-start" value="2023-01-01" min="2023-01-06"
+            max="2023-06-06">
+        </div>
+        <button type="submit" class="btn btn-block">Gửi
+          <span class="glyphicon glyphicon-ok"></span>
+        </button>
+      </form>
+</body>
+</html>
